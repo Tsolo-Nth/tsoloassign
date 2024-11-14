@@ -1,0 +1,135 @@
+/* General Layout */
+body {
+    font-family: 'Georgia', serif; /* Elegant serif font */
+    margin: 0;
+    padding: 0;
+    background-color: #cbabee;
+    padding-top: 300px;
+}
+
+header {
+    background-color: #9b66d0; /* Purple header */
+    color: #fff;
+    text-align: center;
+    padding: 2rem; /* Increased padding for header */
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem; /* Increased font size */
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    gap: 20px; /* Increased gap between nav buttons */
+}
+
+nav button {
+    background-color: #7a4b96; /* Purple color for buttons */
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Increased padding for larger buttons */
+    margin: 0 10px; /* More spacing between buttons */
+    border-radius: 20px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1.1rem; /* Increased font size */
+    font-weight: bold;
+}
+
+nav button:hover {
+    background-color: #5a2c7e; /* Darker purple on hover */
+    transform: scale(1.05);
+}
+
+nav button.active {
+    background-color: #9b66d0; /* Lighter purple for active state */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+/* Login Section Styling */
+#login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f8f0ff; /* Light purple background */
+    height: 100vh;
+    justify-content: flex-start;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #7a4b96; /* Purple for headings */
+    font-size: 2.2rem; /* Slightly larger font size for headings */
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 450px;
+    margin-bottom: 25px;
+}
+
+input {
+    padding: 14px;
+    border: 1px solid #e0a3c3; /* Light pink border */
+    border-radius: 8px;
+    width: 100%;
+    background-color: #f8e7fc; /* Very light purple input background */
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #7a4b96; /* Purple border on focus */
+    outline: none;
+}
+
+button {
+    padding: 12px 24px; /* Larger padding for buttons */
+    background-color: #7a4b96; /* Purple button */
+    color: white;
+    border: none;
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #5a2c7e; /* Darker purple on hover */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    nav button {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

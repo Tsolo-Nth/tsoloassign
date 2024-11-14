@@ -1,0 +1,42 @@
+/* Dashboard Styling */
+#dashboard {
+    padding: 40px; /* Increased padding for a larger layout */
+    max-width: 3000px; /* Increased the max-width to make the dashboard wider */
+    margin: 0 auto; /* Center the dashboard */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px; /* Increased space below the image */
+}
+
+.rotating-image {
+    width: 250px; /* Increased the size of the image */
+    height: auto;
+    animation: rotation 6s infinite linear; /* Slower rotation for a larger image */
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#stockOverview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 30px; /* Increased top margin for more spacing */
+}
+
+.canvas-container {
+    max-width: 3500px; /* Increased max-width for the canvas container */
+    width: 100vh; /* Ensure the width is 100% of its parent */
+    height: 500px; /* Kept the height the same */
+    margin: 0 auto; /* Center the canvas */
+}

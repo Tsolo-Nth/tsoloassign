@@ -1,0 +1,120 @@
+#productManagement {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.product-form input {
+    flex: 1 1 calc(50% - 10px);
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+}
+
+.product-form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.product-form .submit-button {
+    flex: 1 1 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-form .submit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.product-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.product-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9; 
+}
+
+.product-table tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+.button-container {
+    display: flex;
+    gap: 5px;
+}
+
+.button-container button {
+    background-color: #28a745;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+    background-color: #218838;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 600px) {
+    .product-form input {
+        flex: 1 1 100%; 
+    }
+
+    .product-form .submit-button {
+        flex: 1 1 auto; 
+    }
+}
